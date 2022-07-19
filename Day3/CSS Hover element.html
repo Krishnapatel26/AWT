@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Hover Element-selector OR Child Combinator</title>
+        <style type="text/CSS">
+                #MainUL li ul li{display:none;}
+                /* #MainUL li ul li ul li{display:none;} */
+                #MainUL li:hover ul li{display:block;}
+                #MainUL li:hover ul li ul li{display:none;}
+                /* #MainUL li ul li ul li{display:none;} */
+                #MainUL li ul li:hover ul li{display:block;}
+        </style>
+    </head>
+    <body>
+        <ul id="MainUL">
+            <li>SOCET
+                <ul>
+                    <li>CE
+                        <ul>
+                            <li>pooo</li>
+                            <li>B</li>
+                        </ul>
+                    </li>
+                    <li>IT</li>
+                </ul>
+
+            </li>
+        </ul>
+    </body>
+</html>
